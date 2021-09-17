@@ -11,7 +11,6 @@ class Bayar extends Component {
   render() {
     return (
       <div>
-        <Makanan />
         <button onClick={this.ChangeFashion}>Pilih Menu</button>
         <br />
         <p>
