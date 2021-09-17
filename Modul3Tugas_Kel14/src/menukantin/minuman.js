@@ -5,7 +5,7 @@ class Minuman extends Component {
     menu: ' ',
   };
   componentDidMount() {
-    alert('Show Fashion! (Proses mount)');
+    alert('Show Minuman (Proses mount)');
   }
   ChangeMenu = () => {
     this.setState((state) => {
@@ -17,7 +17,7 @@ class Minuman extends Component {
     });
   };
   componentWillUnmount() {
-    alert('Hide Fashion (Proses Unmount)!');
+    alert('Hide Minuman (Proses Unmount)!');
   }
   render() {
     return (

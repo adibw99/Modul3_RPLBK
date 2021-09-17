@@ -40,14 +40,14 @@ class home extends Component {
   render() {
     return (
       <div>
-        {this.state.komponen1 ? <Minuman /> : ''}
+        {this.state.komponen1 ? <Makanan /> : ''}
         <button onClick={this.ubahkomponen1}>{this.state.komponen1 ? 'HIDE' : 'SHOW'} Harga Makanan </button>
         <div style={{ border: '0.5px solid black' }}></div>
-        {this.state.komponen2 ? <Makanan /> : ''}
+        {this.state.komponen2 ? <Minuman /> : ''}
         <button onClick={this.ubahkomponen2}>{this.state.komponen2 ? 'HIDE' : 'SHOW'} Menu </button>
         <div style={{ border: '0.5px solid black' }}></div>
         {this.state.komponen3 ? <Bayar /> : ''}
-        <button onClick={this.ubahkomponen3}>{this.state.komponen3} Bayar </button>
+        <button onClick={this.ubahkomponen3}>{this.state.komponen3 ? 'HIDE' : 'SHOW'} Pilihan </button>
       </div>
     );
   }

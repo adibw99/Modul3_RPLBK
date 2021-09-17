@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
-
+import Makanan from './makanan';
 class Bayar extends Component {
   state = {
-    bayar: ' ',
+    makanan: ' ',
+  };
+
+  state = {
+    minuman: '',
   };
   render() {
     return (
       <div>
-        <button onClick={this.ChangeFashion}>Bayar</button>
+        <Makanan />
+        <button onClick={this.ChangeFashion}>Pilih Menu</button>
         <br />
-        <p>Total Harga : {this.state.bayar}</p>
+        <p>
+          Menu yang dipilih : {this.state.makanan} + {this.state.minuman}
+        </p>
       </div>
     );
   }
